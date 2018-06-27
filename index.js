@@ -51,7 +51,7 @@ express()
             // file.lastModifiedDate - date object or null
             // file.hash - hex digest if set
             // Changing file upload path can also be done here:
-            file.path = path.join(__dirname, './uploads_secondary/' + file.name)
+            file.path = path.join(__dirname, '.\uploads_secondary\' + file.name)
         })
         form.on('progress', (bytesReceived, bytesExpected) => {
             console.log('Progress', bytesReceived, bytesExpected)
